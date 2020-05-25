@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>As mentioned in today's circular, the students selected for the college fest ramp walk are suppose to fill this form. Measurements for the costume will be taken later.</h1>
+<h2>Ramp walk Participant details:</h2>
+
+<form action="/action_page.php">
+  <label for="fname"><b>First name:</b></label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="lname"><b>Last name:</b></label><br>
+  <input type="text" id="lname" name="lname" ><br>
+  <label for="Phone"><b>Contact number:</b></label><br>
+  <input type="tel" id="Phone" name="Phone"><br>
+  <label for="mail"><b>Email id:</b></label><br>
+  <input type="email" id="mail" name="mail"><br>
+  <label for="Sem"><b>Semester:</b></label><br>
+  <input type="text" id="Sem" name="Sem"><br>
+  <label for="branch"><b>Branch</b></label><br>
+  <input list="branch"   name="branch">
+  <datalist id="branch">
+    <option value="CSE">
+    <option value="ECE">
+    <option value="ISE">
+    <option value="MECH">
+    <option value="EEE">
+    <option value="CIVIL">
+    <option value="IP">
+  </datalist>
+  <br>
+  <label><b>Gender</b></label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male"><b>Male</b></label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female"><b>Female</b></label><br>
+  <input type="radio" id="others" name="gender" value="others">
+  <label for="others"><b>others</b></label><br>
+   <label for="round"><b>Round</b></label><br>
+  <input list="round"   name="round">
+  <datalist id="round">
+    <option value="Bridal Theme">
+    <option value="Retro Theme">
+    <option value="FairyTale"> 
+  </datalist>
+  <br>
+  <label for="colour"><b>Attire colour:</b></label><br>
+  <input type="color" id="colour" name="colour"><br>
+  <label for="date"><b>Slot given:</b></label><br>
+  <input type="date" id="date" name="date" required><br>
+  <br>
+
+  <input type="submit" value="Submit"><input type="reset" value="Reset">
+</form> 
+
+<p><b><mark>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".This page is only created for assignment purpose. Do not enter any data</b></p>
+
+</body>
+</html>
